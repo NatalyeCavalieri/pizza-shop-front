@@ -73,7 +73,7 @@ export function StoreProfileDialog() {
         <div className="space-y-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label className="text-right" htmlFor="name" {...register('name')}>
-              Nome
+              Name
             </Label>
             <Input className="col-span-3" id="name" />
           </div>
