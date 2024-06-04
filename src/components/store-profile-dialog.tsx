@@ -72,20 +72,20 @@ export function StoreProfileDialog() {
       <form onSubmit={handleSubmit(handleUpdateProfile)}>
         <div className="space-y-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
-            <Label className="text-right" htmlFor="name" {...register('name')}>
+            <Label className="text-right" htmlFor="name">
               Name
             </Label>
-            <Input className="col-span-3" id="name" />
+            <Input className="col-span-3" id="name" {...register('name')} />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
-            <Label
-              className="text-right"
-              htmlFor="description"
-              {...register('description')}
-            >
+            <Label className="text-right" htmlFor="description">
               Descrição
             </Label>
-            <Textarea className="col-span-3" id="description" />
+            <Textarea
+              className="col-span-3"
+              id="description"
+              {...register('description')}
+            />
           </div>
         </div>
         <DialogFooter>
